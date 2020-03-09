@@ -14,6 +14,18 @@ import java.io.InputStreamReader;
  */
 public class textToGraph {
 
+    public static int readInt(BufferedReader reader) {
+        int resposta = 0;
+
+        try {
+            resposta = Integer.parseInt(input(reader));
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
+
+        return resposta;
+    }
+
     public static String input(BufferedReader reader) {
         String input = "";
         
@@ -26,6 +38,14 @@ public class textToGraph {
         return input;
     }
 
+    public static boolean readInputs(BufferedReader reader) {
+        boolean validate = false;
+
+        
+
+        return validate;
+    }
+
     public static void main(String[] args) {
         
         BufferedReader br = null;
@@ -36,6 +56,7 @@ public class textToGraph {
             e.printStackTrace();
         }
 
+        int x = readInt(br);
 
 
     }
